@@ -1,0 +1,4 @@
+*.log
+node_modules/
+*fuse_hidden*
+package-lock.json
