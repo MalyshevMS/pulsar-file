@@ -9,7 +9,7 @@ const app = express();
 const PORT = 3000;
 
 const STORAGE_ROOT = "/var/www/storage";
-const TMP_DIR = "/tmp";
+const TMP_DIR = "/root/tmp";
 
 const MAX_FILE_SIZE = 50 * 1024 * 1024; // 50MB
 
