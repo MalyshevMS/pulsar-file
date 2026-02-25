@@ -47,7 +47,7 @@ app.post("/upload", upload.single("file"), (req, res) => {
             return res.status(400).json({ error: "Unsupported MIME type" });
         }
 
-        const ext = mime.extension(req.file.mimetype);
+        const ext = req.file.originalname.split(".").pop();
         const filename = crypto.randomUUID() + "." + ext;
 
         fs.mkdirSync(STORAGE_ROOT, { recursive: true });
