@@ -1,9 +1,8 @@
-import express from "express";
-import multer from "multer";
-import fs from "fs";
-import path from "path";
-import crypto from "crypto";
-import mime from "mime-types";
+const express = require("express");
+const multer = require("multer");
+const fs = require("fs");
+const crypto = require("crypto");
+const mime = require("mime-types");
 
 const app = express();
 const PORT = 3000;
